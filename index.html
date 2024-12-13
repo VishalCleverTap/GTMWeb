@@ -154,18 +154,23 @@
         // clevertap.event.push("Engagement Event", {
         //   "Channel": "Web Native Display"
         // });
+
+	      dataLayer.push({'event': 'bannerWebNative'});
         document.getElementById("divBannerNativeDisplay").removeAttribute("hidden");
       }
       function carousalNativeDisplay() {
         // clevertap.event.push("Engagement Event", {
         //   "Channel": "Carousel Web Native Display"
         // });
+	      
+	      dataLayer.push({'event': 'CarouselWebNative'});
         document.getElementById("divCarousalWebNativeDisplay").removeAttribute("hidden");
       }
       function customNativeDisplay() {
         // clevertap.event.push("Engagement Event", {
         //   "Channel": "Custom Web Native Display"
         // });
+	      dataLayer.push({'event': 'CustomWebNative'});
         document.getElementById("divCustomWebNativeDisplay").removeAttribute("hidden");
       }
 
